@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mygrouppurchase.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_promiseFragment"
+            app:destination="@id/promiseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/talkFragment"
+        android:name="com.example.mygrouppurchase.Fragments.TalkFragment"
+        android:label="fragment_talk"
+        tools:layout="@layout/fragment_talk" >
+
+        <action
+            android:id="@+id/action_talkFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_promiseFragment"
+            app:destination="@id/promiseFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+        <action
+            android:id="@+id/action_talkFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/promiseFragment"
+        android:name="com.example.mygrouppurchase.Fragments.PromiseFragment"
+        android:label="fragment_promise"
+        tools:layout="@layout/fragment_promise" >
+        <action
+            android:id="@+id/action_promiseFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+
+        <action
+            android:id="@+id/action_promiseFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_promiseFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+        <action
+            android:id="@+id/action_promiseFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personalFragment"
+        android:name="com.example.mygrouppurchase.Fragments.PersonalFragment"
+        android:label="fragment_personal"
+        tools:layout="@layout/fragment_personal" >
+        <action
+            android:id="@+id/action_personalFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_personalFragment_to_promiseFragment"
+            app:destination="@id/promiseFragment" />
+        <action
+            android:id="@+id/action_personalFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_personalFragment_to_postingFragment"
+            app:destination="@id/postingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/postingFragment"
+        android:name="com.example.mygrouppurchase.Fragments.PostingFragment"
+        android:label="fragment_posting"
+        tools:layout="@layout/fragment_posting" >
+        <action
+            android:id="@+id/action_postingFragment_to_personalFragment"
+            app:destination="@id/personalFragment" />
+        <action
+            android:id="@+id/action_postingFragment_to_talkFragment"
+            app:destination="@id/talkFragment" />
+        <action
+            android:id="@+id/action_postingFragment_to_promiseFragment"
+            app:destination="@id/promiseFragment" />
+        <action
+            android:id="@+id/action_postingFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>
