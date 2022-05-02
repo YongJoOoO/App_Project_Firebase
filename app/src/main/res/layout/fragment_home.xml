@@ -16,28 +16,69 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="70dp"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="150dp">
+
                     <ImageView
-                        android:src="@drawable/main_icon_all"
-                        android:layout_weight="1"
+                        android:id="@+id/category1"
                         android:layout_width="120dp"
-                        android:layout_height="120dp"/>
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_all" />
+
                     <ImageView
-                        android:src="@drawable/main_icon_general"
-                        android:layout_weight="1"
+                        android:id="@+id/category2"
                         android:layout_width="120dp"
-                        android:layout_height="120dp"/>
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_delivery" />
+
                     <ImageView
-                        android:src="@drawable/main_icon_delivery"
-                        android:layout_weight="1"
+                        android:id="@+id/category3"
                         android:layout_width="120dp"
-                        android:layout_height="120dp"/>
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_general" />
 
                 </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+
+                    <ImageView
+                        android:id="@+id/category4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_clothes" />
+
+                    <ImageView
+                        android:id="@+id/category5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_likes" />
+                    <ImageView
+                        android:id="@+id/category6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/main_icon_pay" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#999999"/>
+
 
             </LinearLayout>
 

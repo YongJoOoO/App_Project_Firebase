@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".board.BoardWriteActivity"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/back_btn"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="289dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="게시글 작성"
+                android:textColor="@color/black"
+                android:textSize="10pt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#999999"/>
+
+        <EditText
+            android:id="@+id/titleArea"
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:background="#FFFCFC"
+            android:hint="제목을 입력해주세요"
+            android:layout_height="60dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#999999"/>
+
+        <EditText
+            android:id="@+id/contentArea"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_margin="20dp"
+            android:background="#FFFCFC"
+            android:hint="내용을 입력해주세요" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#999999"/>
+
+        <ImageView
+            android:layout_width="423dp"
+            android:layout_height="131dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/plusbtn" />
+
+        <Button
+            android:id="@+id/writeBtn"
+            android:text="입력"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/background_radius_grin"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+</layout>

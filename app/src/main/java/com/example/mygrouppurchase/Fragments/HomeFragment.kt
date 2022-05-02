@@ -25,6 +25,18 @@ class HomeFragment : Fragment() { // '홈' 프래그먼트
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
 
+        binding.category1.setOnClickListener {
+            //ALL 버튼 클릭 시 home -> 게시글로 바로 전환되도록 이벤트 처리
+            it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
+        }
+        binding.category2.setOnClickListener {
+            //배달 버튼 클릭 시 home -> 게시글 바로 전환 이벤트 처리
+            it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
+        }
+        binding.category3.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
+        }
+
         binding.tipTap.setOnClickListener{
             it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
         }

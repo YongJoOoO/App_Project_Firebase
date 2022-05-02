@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGroupPurchase">
         <activity
-            android:name=".setting.SettingActivity"
+            android:name=".board.BoardWriteActivity"
             android:exported="true" />
         <activity
             android:name=".contentsList.ContentsListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".setting.SettingActivity"
             android:exported="true" />
         <activity
             android:name=".auth.JoinActivity"
