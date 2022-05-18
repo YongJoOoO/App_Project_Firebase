@@ -36,6 +36,12 @@ class HomeFragment : Fragment() { // '홈' 프래그먼트
         binding.category3.setOnClickListener {
             it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
         }
+        binding.category4.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
+        }
+        binding.category5.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)
+        }
 
         binding.tipTap.setOnClickListener{
             it.findNavController().navigate(R.id.action_homeFragment_to_postingFragment)

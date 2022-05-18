@@ -2,20 +2,17 @@
 <layout xmlns:tools="http://schemas.android.com/tools"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".fragments.TipFragment">
-
-        <TextView
-            android:text="게시글 목록 프래그먼트"
-            android:textSize="10pt"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/boardListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="70dp"/>
+
 
             <ImageView
                 android:id="@+id/writeBtn"
@@ -100,5 +97,5 @@
                     android:src="@drawable/bottom_store"/>
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </FrameLayout>
+
 </layout>

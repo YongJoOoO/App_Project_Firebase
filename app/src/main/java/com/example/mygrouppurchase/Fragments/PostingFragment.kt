@@ -9,6 +9,8 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.mygrouppurchase.R
+import com.example.mygrouppurchase.board.BoardListLVAdapter
+import com.example.mygrouppurchase.board.BoardModel
 import com.example.mygrouppurchase.board.BoardWriteActivity
 import com.example.mygrouppurchase.databinding.FragmentPostingBinding
 
@@ -16,6 +18,12 @@ import com.example.mygrouppurchase.databinding.FragmentPostingBinding
 class PostingFragment : Fragment() { //'게시글' 프래그먼트
 
     private lateinit var  binding: FragmentPostingBinding
+
+    private val boardDataList = mutableListOf<BoardModel>()
+
+    private val TAG = PostingFragment::class.java.simpleName
+
+    private lateinit var boardRVAdapter : BoardListLVAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +36,10 @@ class PostingFragment : Fragment() { //'게시글' 프래그먼트
     ): View? {
         // Inflate the layout for this fragment
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_posting, container, false)
+
+
+
+
 
         binding.writeBtn.setOnClickListener {
             val intent = Intent(context, BoardWriteActivity::class.java)
@@ -47,8 +59,13 @@ class PostingFragment : Fragment() { //'게시글' 프래그먼트
             it.findNavController().navigate(R.id.action_postingFragment_to_personalFragment)
         }
 
+
         return binding.root
     }
+
+
+
+
 
 
 }
