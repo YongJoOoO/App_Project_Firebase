@@ -18,7 +18,6 @@ class PromiseFragment : Fragment() { //'약속잡기' 프래그먼트
         super.onCreate(savedInstanceState)
 
     }
-
     override fun onCreateView( //자동 호출 함수
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -40,6 +39,5 @@ class PromiseFragment : Fragment() { //'약속잡기' 프래그먼트
 
         return binding.root
     }
-
 
 }
