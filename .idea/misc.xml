@@ -6,6 +6,7 @@
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/drawable/background_radius.xml" value="0.1" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/drawable/background_radius_grin.xml" value="0.1" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/drawable/ic_launcher_background.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/activity_board_inside.xml" value="0.10104166666666667" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/activity_board_write.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/activity_contents_list.xml" value="0.1" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/activity_intro.xml" value="0.1" />
@@ -26,6 +27,8 @@
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/fragment_talk.xml" value="0.1" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/layout/fragment_tip.xml" value="0.1" />
         <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.178125" />
+        <entry key="..\:/Users/LG/AndroidStudioProjects/MyGroupPurchase/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.178125" />
       </map>
     </option>
   </component>

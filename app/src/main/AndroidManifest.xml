@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyGroupPurchase">
         <activity
+            android:name=".board.BoardInsideActivity"
+            android:exported="true" />
+        <activity
             android:name=".board.BoardWriteActivity"
             android:exported="true" />
         <activity

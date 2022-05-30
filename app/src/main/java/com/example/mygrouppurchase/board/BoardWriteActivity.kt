@@ -40,16 +40,13 @@ class BoardWriteActivity : AppCompatActivity() {
             Log.d(TAG, title)
             Log.d(TAG, content)
 
-            //-> RealTime DB에 게시글 속 내용 push()
-            val key = FBRef.boardRef.push().key.toString()
-
             FBRef.boardRef
-                .child(key)
+                .push() //값 데이터를 담기
                 .setValue(BoardModel(title, content, uid, time))
 
             Toast.makeText(this, "게시글 입력 완료", Toast.LENGTH_LONG).show()
 
-            finish()
+            finish() //액티비티 사라짐
 
         }
     }
